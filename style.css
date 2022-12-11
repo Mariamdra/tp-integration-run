@@ -34,7 +34,15 @@ p{
 
 .button{
   border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
 
+}
+section{
+  box-shadow:inset 0 1px 0 rgb(165, 162, 162);
 }
 
 .button:hover, 
@@ -46,7 +54,7 @@ body{
   font-family: "Source Sans Pro", sans-serif;
 }
 
-/* **********<header******* */
+/* **********header******* */
 
 header{
   min-height: 100vh; 
@@ -55,5 +63,127 @@ header{
 }
 
 .banner{
-  background:url(./img/banner.jpg) center/cover;
+  background:url(./img/banner.jpg) right/cover;
+}
+
+header .contenu-text{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  margin:0 45px;
+}
+
+/* **************section 1********* */
+.part-one{
+  display: grid;
+  grid-template-columns: 35% 65%
+}
+.img-left{
+  background: url(./img/img-left.jpg) center/cover;
+  width: 90%;
+  height: 350PX;
+ 
+}
+
+.part-one .contenu-text{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  margin:;
+}
+
+/* ***********section 2************* */
+
+.part-two{
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.img-right{
+  background: url(./img/img-right.jpg) center/cover;
+  width: 100%;
+  height: 300px;
+  margin-right: 0;
+}
+
+.part-two .contenu-text{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding: 0 45px;
+}
+
+/* *************form************ */
+.contact{
+  text-align: center;
+  padding: 65px 0;
+}
+.form-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 224px; 
+  grid-template-areas: 
+  "i1 12"
+  "texta texta"; 
+  width: 85%;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+label{
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+input[type="text"],input[type="email"], textarea{
+  width: 100%;
+  margin: 20px 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea{
+  resize: none;
+  height: 150px;
+}
+
+/* .input1{
+  grid-area: i1;
+}
+.input2{
+  grid-area: i2;
+} */
+.message{
+  grid-area: texta;
+} 
+
+/* ********footer************ */
+footer{
+  padding: 70PX 0 90PX;
+  position: relative;
+}
+.icon-reseaux{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  width: 33%;
+  min-width: 300px;
+}
+
+.icon-reseaux a{
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
